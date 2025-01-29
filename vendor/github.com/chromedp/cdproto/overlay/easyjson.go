@@ -4379,7 +4379,7 @@ func (v *FlexContainerHighlightConfig) UnmarshalJSON(data []byte) error {
 func (v *FlexContainerHighlightConfig) UnmarshalEasyJSON(l *jlexer.Lexer) {
 	easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay41(l, v)
 }
-func easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay42(in *jlexer.Lexer, out *EventScrensshotRequested) {
+func easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay42(in *jlexer.Lexer, out *EventScreenshotRequested) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -4418,7 +4418,7 @@ func easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay42(in *jlexer.Lexer, o
 		in.Consumed()
 	}
 }
-func easyjsonC5a4559bEncodeGithubComChromedpCdprotoOverlay42(out *jwriter.Writer, in EventScrensshotRequested) {
+func easyjsonC5a4559bEncodeGithubComChromedpCdprotoOverlay42(out *jwriter.Writer, in EventScreenshotRequested) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -4435,26 +4435,26 @@ func easyjsonC5a4559bEncodeGithubComChromedpCdprotoOverlay42(out *jwriter.Writer
 }
 
 // MarshalJSON supports json.Marshaler interface
-func (v EventScrensshotRequested) MarshalJSON() ([]byte, error) {
+func (v EventScreenshotRequested) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
 	easyjsonC5a4559bEncodeGithubComChromedpCdprotoOverlay42(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
-func (v EventScrensshotRequested) MarshalEasyJSON(w *jwriter.Writer) {
+func (v EventScreenshotRequested) MarshalEasyJSON(w *jwriter.Writer) {
 	easyjsonC5a4559bEncodeGithubComChromedpCdprotoOverlay42(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
-func (v *EventScrensshotRequested) UnmarshalJSON(data []byte) error {
+func (v *EventScreenshotRequested) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
 	easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay42(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
-func (v *EventScrensshotRequested) UnmarshalEasyJSON(l *jlexer.Lexer) {
+func (v *EventScreenshotRequested) UnmarshalEasyJSON(l *jlexer.Lexer) {
 	easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay42(l, v)
 }
 func easyjsonC5a4559bDecodeGithubComChromedpCdprotoOverlay43(in *jlexer.Lexer, out *EventNodeHighlightRequested) {
