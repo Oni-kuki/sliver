@@ -30,11 +30,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/implant/sliver/handlers/matcher"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/util/encoders"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/implant/sliver/handlers/matcher"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/util/encoders"
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/proto"
 )

@@ -131,7 +131,7 @@ jobs:
           gpg --default-key 4449039C --output ./artifacts/sliver-client_freebsd-arm64.sig --detach-sig ./artifacts/sliver-client_freebsd-arm64.exe
 
       - name: "Publish Release"
-        uses: "bishopfox/action-gh-release@v1"
+        uses: "Oni-kuki/action-gh-release@v1"
         with:
           files: |
             ./artifacts/*

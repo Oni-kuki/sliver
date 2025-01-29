@@ -3,11 +3,11 @@ package rpc
 import (
 	"context"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/server/certs"
-	"github.com/bishopfox/sliver/server/generate"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/server/certs"
+	"github.com/Oni-kuki/sliver/server/generate"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

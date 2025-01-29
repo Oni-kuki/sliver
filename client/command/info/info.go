@@ -22,11 +22,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/bishopfox/sliver/client/command/use"
-	"github.com/bishopfox/sliver/client/console"
-	consts "github.com/bishopfox/sliver/client/constants"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/client/command/use"
+	"github.com/Oni-kuki/sliver/client/console"
+	consts "github.com/Oni-kuki/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/proto"
 )

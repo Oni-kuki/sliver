@@ -26,8 +26,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bishopfox/sliver/server/assets"
-	"github.com/bishopfox/sliver/server/log"
+	"github.com/Oni-kuki/sliver/server/assets"
+	"github.com/Oni-kuki/sliver/server/log"
 )
 
 const (

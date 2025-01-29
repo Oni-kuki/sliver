@@ -39,18 +39,18 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/server/certs"
-	"github.com/bishopfox/sliver/server/core"
-	"github.com/bishopfox/sliver/server/cryptography"
-	"github.com/bishopfox/sliver/server/db"
-	"github.com/bishopfox/sliver/server/encoders"
-	"github.com/bishopfox/sliver/server/generate"
-	sliverHandlers "github.com/bishopfox/sliver/server/handlers"
-	"github.com/bishopfox/sliver/server/log"
-	"github.com/bishopfox/sliver/server/website"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/server/certs"
+	"github.com/Oni-kuki/sliver/server/core"
+	"github.com/Oni-kuki/sliver/server/cryptography"
+	"github.com/Oni-kuki/sliver/server/db"
+	"github.com/Oni-kuki/sliver/server/encoders"
+	"github.com/Oni-kuki/sliver/server/generate"
+	sliverHandlers "github.com/Oni-kuki/sliver/server/handlers"
+	"github.com/Oni-kuki/sliver/server/log"
+	"github.com/Oni-kuki/sliver/server/website"
+	"github.com/Oni-kuki/sliver/util"
 
 	"github.com/gorilla/mux"
 	"google.golang.org/protobuf/proto"
@@ -578,7 +578,7 @@ func (s *SliverHTTPC2) startSessionHandler(resp http.ResponseWriter, req *http.R
 		s.defaultHandler(resp, req)
 		return
 	}
-	sessionInit := &sliverpb.HTTPSessionInit{}
+	sessionInit := &sliverpb.HTTPSescionInit{}
 	err = proto.Unmarshal(sessionInitData, sessionInit)
 	if err != nil {
 		httpLog.Error("Failed to decode session init")

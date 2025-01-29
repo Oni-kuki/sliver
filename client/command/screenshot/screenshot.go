@@ -25,11 +25,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/bishopfox/sliver/client/command/loot"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/client/command/loot"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/util"
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/proto"
 )
@@ -47,7 +47,7 @@ func ScreenshotCmd(cmd *cobra.Command, con *console.SliverClient, args []string)
 		return
 	}
 
-	screenshot, err := con.Rpc.Screenshot(context.Background(), &sliverpb.ScreenshotReq{
+	screenshot, err := con.Rpc.Screenshot(context.Background(), &sliverpb.ScrensshotReq{
 		Request: con.ActiveTarget.Request(cmd),
 	})
 	if err != nil {

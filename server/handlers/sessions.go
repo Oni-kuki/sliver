@@ -30,11 +30,11 @@ import (
 	"net"
 	"time"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/server/core"
-	"github.com/bishopfox/sliver/server/core/rtunnels"
-	"github.com/bishopfox/sliver/server/log"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/server/core"
+	"github.com/Oni-kuki/sliver/server/core/rtunnels"
+	"github.com/Oni-kuki/sliver/server/log"
 
 	"google.golang.org/protobuf/proto"
 

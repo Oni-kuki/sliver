@@ -35,28 +35,28 @@ import (
 	// {{if .Config.IncludeMTLS}}
 	"crypto/tls"
 
-	"github.com/bishopfox/sliver/implant/sliver/transports/mtls"
+	"github.com/Oni-kuki/sliver/implant/sliver/transports/mtls"
 
 	// {{end}}
 
 	// {{if .Config.IncludeWG}}
 	"errors"
 
-	"github.com/bishopfox/sliver/implant/sliver/transports/wireguard"
+	"github.com/Oni-kuki/sliver/implant/sliver/transports/wireguard"
 	"golang.zx2c4.com/wireguard/device"
 
 	// {{end}}
 
 	// {{if .Config.IncludeHTTP}}
-	"github.com/bishopfox/sliver/implant/sliver/transports/httpclient"
+	"github.com/Oni-kuki/sliver/implant/sliver/transports/httpclient"
 	// {{end}}
 
 	// {{if .Config.IncludeDNS}}
-	"github.com/bishopfox/sliver/implant/sliver/transports/dnsclient"
+	"github.com/Oni-kuki/sliver/implant/sliver/transports/dnsclient"
 	// {{end}}
 
 	// {{if .Config.IncludeTCP}}
-	"github.com/bishopfox/sliver/implant/sliver/transports/pivotclients"
+	"github.com/Oni-kuki/sliver/implant/sliver/transports/pivotclients"
 	"google.golang.org/protobuf/proto"
 
 	// {{end}}
@@ -66,7 +66,7 @@ import (
 	"net/url"
 	"sync"
 
-	pb "github.com/bishopfox/sliver/protobuf/sliverpb"
+	pb "github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	// {{end}}
 
 	"time"

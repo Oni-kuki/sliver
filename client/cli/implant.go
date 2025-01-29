@@ -21,10 +21,10 @@ package cli
 import (
 	"errors"
 
-	"github.com/bishopfox/sliver/client/command"
-	"github.com/bishopfox/sliver/client/command/use"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/client/command"
+	"github.com/Oni-kuki/sliver/client/command/use"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/client/constants"
 	"github.com/rsteube/carapace"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

@@ -36,9 +36,9 @@ import (
 	"sync"
 
 	"filippo.io/age"
-	"github.com/bishopfox/sliver/server/db"
-	"github.com/bishopfox/sliver/util/encoders"
-	"github.com/bishopfox/sliver/util/minisign"
+	"github.com/Oni-kuki/sliver/server/db"
+	"github.com/Oni-kuki/sliver/util/encoders"
+	"github.com/Oni-kuki/sliver/util/minisign"
 	"golang.org/x/crypto/chacha20poly1305"
 )
 

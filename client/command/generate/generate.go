@@ -33,12 +33,12 @@ import (
 	"time"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/bishopfox/sliver/client/console"
-	consts "github.com/bishopfox/sliver/client/constants"
-	"github.com/bishopfox/sliver/client/spin"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/client/console"
+	consts "github.com/Oni-kuki/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/client/spin"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/util"
 	"github.com/spf13/cobra"
 )
 
@@ -69,7 +69,7 @@ const (
 )
 
 const (
-	crossCompilerInfoURL = "https://github.com/BishopFox/sliver/wiki/Cross-Compiling-Implants"
+	crossCompilerInfoURL = "https://github.com/Oni-kuki/sliver/wiki/Cross-Compiling-Implants"
 )
 
 var (

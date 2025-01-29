@@ -68,10 +68,10 @@ import (
 	"log"
 	// {{end}}
 
-	"github.com/bishopfox/sliver/implant/sliver/cryptography"
-	"github.com/bishopfox/sliver/implant/sliver/encoders"
-	"github.com/bishopfox/sliver/protobuf/dnspb"
-	pb "github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/cryptography"
+	"github.com/Oni-kuki/sliver/implant/sliver/encoders"
+	"github.com/Oni-kuki/sliver/protobuf/dnspb"
+	pb "github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"github.com/miekg/dns"
 	"google.golang.org/protobuf/proto"
 )

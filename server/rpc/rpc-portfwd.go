@@ -21,8 +21,8 @@ package rpc
 import (
 	"context"
 
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/server/core"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/server/core"
 	"google.golang.org/protobuf/proto"
 )
 

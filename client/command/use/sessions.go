@@ -21,8 +21,8 @@ package use
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/bishopfox/sliver/client/command/sessions"
-	"github.com/bishopfox/sliver/client/console"
+	"github.com/Oni-kuki/sliver/client/command/sessions"
+	"github.com/Oni-kuki/sliver/client/console"
 )
 
 // UseSessionCmd - Change the active session

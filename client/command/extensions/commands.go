@@ -1,9 +1,9 @@
 package extensions
 
 import (
-	"github.com/bishopfox/sliver/client/command/help"
-	"github.com/bishopfox/sliver/client/console"
-	consts "github.com/bishopfox/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/client/command/help"
+	"github.com/Oni-kuki/sliver/client/console"
+	consts "github.com/Oni-kuki/sliver/client/constants"
 	"github.com/rsteube/carapace"
 	"github.com/spf13/cobra"
 )

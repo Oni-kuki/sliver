@@ -25,20 +25,20 @@ import (
 	"time"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/bishopfox/sliver/client/command/environment"
-	"github.com/bishopfox/sliver/client/command/exec"
-	"github.com/bishopfox/sliver/client/command/extensions"
-	"github.com/bishopfox/sliver/client/command/filesystem"
-	"github.com/bishopfox/sliver/client/command/network"
-	"github.com/bishopfox/sliver/client/command/privilege"
-	"github.com/bishopfox/sliver/client/command/processes"
-	"github.com/bishopfox/sliver/client/command/registry"
-	"github.com/bishopfox/sliver/client/command/settings"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/client/constants"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/client/command/environment"
+	"github.com/Oni-kuki/sliver/client/command/exec"
+	"github.com/Oni-kuki/sliver/client/command/extensions"
+	"github.com/Oni-kuki/sliver/client/command/filesystem"
+	"github.com/Oni-kuki/sliver/client/command/network"
+	"github.com/Oni-kuki/sliver/client/command/privilege"
+	"github.com/Oni-kuki/sliver/client/command/processes"
+	"github.com/Oni-kuki/sliver/client/command/registry"
+	"github.com/Oni-kuki/sliver/client/command/settings"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/util"
 	"github.com/jedib0t/go-pretty/v6/table"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
@@ -497,7 +497,7 @@ func renderTaskResponse(task *clientpb.BeaconTask, con *console.SliverClient) {
 		}
 		network.PrintIfconfig(ifconfig, true, con)
 
-	case sliverpb.MsgNetstatReq:
+	case sliverpb.MsgNetstsatReq:
 		netstat := &sliverpb.Netstat{}
 		err := proto.Unmarshal(task.Response, netstat)
 		if err != nil {
@@ -703,7 +703,7 @@ func renderTaskResponse(task *clientpb.BeaconTask, con *console.SliverClient) {
 		}
 		registry.PrintListSubKeys(regList, listValuesReq.Hive, listValuesReq.Path, con)
 
-	case sliverpb.MsgRegistryReadReq:
+	case sliverpb.MsgRegistryReedReq:
 		regRead := &sliverpb.RegistryRead{}
 		err := proto.Unmarshal(task.Response, regRead)
 		if err != nil {
@@ -724,7 +724,7 @@ func renderTaskResponse(task *clientpb.BeaconTask, con *console.SliverClient) {
 	// ---------------------
 	// Screenshot
 	// ---------------------
-	case sliverpb.MsgScreenshotReq:
+	case sliverpb.MsgScrensshotReq:
 		screenshot := &sliverpb.Screenshot{}
 		err := proto.Unmarshal(task.Response, screenshot)
 		if err != nil {

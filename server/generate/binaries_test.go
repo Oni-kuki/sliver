@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/server/certs"
-	"github.com/bishopfox/sliver/server/configs"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/server/certs"
+	"github.com/Oni-kuki/sliver/server/configs"
 )
 
 var (

@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/server/log"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/server/log"
 )
 
 const (

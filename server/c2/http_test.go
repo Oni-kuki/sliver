@@ -27,12 +27,12 @@ package c2
 // 	"net/url"
 // 	"testing"
 
-// 	implantCrypto "github.com/bishopfox/sliver/implant/sliver/cryptography"
-// 	implantEncoders "github.com/bishopfox/sliver/implant/sliver/encoders"
-// 	implantTransports "github.com/bishopfox/sliver/implant/sliver/transports/httpclient"
-// 	"github.com/bishopfox/sliver/protobuf/sliverpb"
-// 	"github.com/bishopfox/sliver/server/configs"
-// 	"github.com/bishopfox/sliver/server/cryptography"
+// 	implantCrypto "github.com/Oni-kuki/sliver/implant/sliver/cryptography"
+// 	implantEncoders "github.com/Oni-kuki/sliver/implant/sliver/encoders"
+// 	implantTransports "github.com/Oni-kuki/sliver/implant/sliver/transports/httpclient"
+// 	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+// 	"github.com/Oni-kuki/sliver/server/configs"
+// 	"github.com/Oni-kuki/sliver/server/cryptography"
 // 	"google.golang.org/protobuf/proto"
 // )
 
@@ -62,7 +62,7 @@ package c2
 
 // 	// Generate key exchange request
 // 	sKey := cryptography.RandomKey()
-// 	httpSessionInit := &sliverpb.HTTPSessionInit{Key: sKey[:]}
+// 	httpSessionInit := &sliverpb.HTTPSescionInit{Key: sKey[:]}
 // 	data, _ := proto.Marshal(httpSessionInit)
 // 	encryptedSessionInit, err := implantCrypto.ECCEncryptToServer(data)
 // 	if err != nil {

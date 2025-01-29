@@ -27,7 +27,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bishopfox/sliver/server/assets"
+	"github.com/Oni-kuki/sliver/server/assets"
 )
 
 // -----------------------

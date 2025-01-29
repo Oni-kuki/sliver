@@ -1,6 +1,6 @@
 syntax = "proto3";
 package rpcpb;
-option go_package = "github.com/bishopfox/sliver/protobuf/rpcpb";
+option go_package = "github.com/Oni-kuki/sliver/protobuf/rpcpb";
 
 import "commonpb/common.proto";
 import "sliverpb/sliver.proto";
@@ -162,7 +162,7 @@ service SliverRPC {
   rpc Ps(sliverpb.PsReq) returns (sliverpb.Ps);
   rpc Terminate(sliverpb.TerminateReq) returns (sliverpb.Terminate);
   rpc Ifconfig(sliverpb.IfconfigReq) returns (sliverpb.Ifconfig);
-  rpc Netstat(sliverpb.NetstatReq) returns (sliverpb.Netstat);
+  rpc Netstat(sliverpb.NetstsatReq) returns (sliverpb.Netstat);
   rpc Ls(sliverpb.LsReq) returns (sliverpb.Ls);
   rpc Cd(sliverpb.CdReq) returns (sliverpb.Pwd);
   rpc Pwd(sliverpb.PwdReq) returns (sliverpb.Pwd);
@@ -194,8 +194,8 @@ service SliverRPC {
   rpc Execute(sliverpb.ExecuteReq) returns (sliverpb.Execute);
   rpc ExecuteWindows(sliverpb.ExecuteWindowsReq) returns (sliverpb.Execute);
   rpc Sideload(sliverpb.SideloadReq) returns (sliverpb.Sideload);
-  rpc SpawnDll(sliverpb.InvokeSpawnDllReq) returns (sliverpb.SpawnDll);
-  rpc Screenshot(sliverpb.ScreenshotReq) returns (sliverpb.Screenshot);
+  rpc SpawnDll(sliverpb.InvokeSpawnDlllReq) returns (sliverpb.SpawnDll);
+  rpc Screenshot(sliverpb.ScrensshotReq) returns (sliverpb.Screenshot);
   rpc CurrentTokenOwner(sliverpb.CurrentTokenOwnerReq)
       returns (sliverpb.CurrentTokenOwner);
   rpc Services(sliverpb.ServicesReq) returns (sliverpb.Services);
@@ -219,7 +219,7 @@ service SliverRPC {
   rpc SetEnv(sliverpb.SetEnvReq) returns (sliverpb.SetEnv);
   rpc UnsetEnv(sliverpb.UnsetEnvReq) returns (sliverpb.UnsetEnv);
   rpc Backdoor(clientpb.BackdoorReq) returns (clientpb.Backdoor);
-  rpc RegistryRead(sliverpb.RegistryReadReq) returns (sliverpb.RegistryRead);
+  rpc RegistryRead(sliverpb.RegistryReedReq) returns (sliverpb.RegistryRead);
   rpc RegistryWrite(sliverpb.RegistryWriteReq) returns (sliverpb.RegistryWrite);
   rpc RegistryCreateKey(sliverpb.RegistryCreateKeyReq)
       returns (sliverpb.RegistryCreateKey);

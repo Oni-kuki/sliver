@@ -21,7 +21,7 @@ package generate
 import (
 	"os"
 
-	"github.com/bishopfox/sliver/client/console"
+	"github.com/Oni-kuki/sliver/client/console"
 	"github.com/spf13/cobra"
 )
 

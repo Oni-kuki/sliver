@@ -23,8 +23,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/bishopfox/sliver/protobuf/rpcpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/protobuf/rpcpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 var (

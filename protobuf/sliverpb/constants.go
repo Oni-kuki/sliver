@@ -153,14 +153,14 @@ const (
 	// MsgTerminate - Kill a remote process
 	MsgTerminate
 
-	// MsgScreenshotReq - Request to take a screenshot
-	MsgScreenshotReq
+	// MsgScrensshotReq - Request to take a screenshot
+	MsgScrensshotReq
 
 	// MsgScreenshot - Response with the screenshots
 	MsgScreenshot
 
-	// MsgNetstatReq - Netstat request
-	MsgNetstatReq
+	// MsgNetstsatReq - Netstat request
+	MsgNetstsatReq
 
 	// *** Pivots ***
 
@@ -207,8 +207,8 @@ const (
 	MsgSetEnv
 	// MsgExecuteWindowsReq - Execute request executed with the current (Windows) token
 	MsgExecuteWindowsReq
-	// MsgRegistryReadReq
-	MsgRegistryReadReq
+	// MsgRegistryReedReq
+	MsgRegistryReedReq
 	// MsgRegistryWriteReq
 	MsgRegistryWriteReq
 	// MsgRegistryCreateKeyReq
@@ -459,12 +459,12 @@ func MsgNumber(request proto.Message) uint32 {
 		return MsgTerminateReq
 	case *Terminate:
 		return MsgTerminate
-	case *ScreenshotReq:
-		return MsgScreenshotReq
+	case *ScrensshotReq:
+		return MsgScrensshotReq
 	case *Screenshot:
 		return MsgScreenshot
-	case *NetstatReq:
-		return MsgNetstatReq
+	case *NetstsatReq:
+		return MsgNetstsatReq
 
 	case *PivotStartListenerReq:
 		return MsgPivotStartListenerReq
@@ -497,8 +497,8 @@ func MsgNumber(request proto.Message) uint32 {
 		return MsgSetEnv
 	case *UnsetEnvReq:
 		return MsgUnsetEnvReq
-	case *RegistryReadReq:
-		return MsgRegistryReadReq
+	case *RegistryReedReq:
+		return MsgRegistryReedReq
 	case *RegistryWriteReq:
 		return MsgRegistryWriteReq
 	case *RegistryCreateKeyReq:

@@ -30,11 +30,11 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/bishopfox/sliver/client/command/help"
-	"github.com/bishopfox/sliver/client/console"
-	consts "github.com/bishopfox/sliver/client/constants"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/client/command/help"
+	"github.com/Oni-kuki/sliver/client/console"
+	consts "github.com/Oni-kuki/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
 )
 
 func Command(con *console.SliverClient) []*cobra.Command {

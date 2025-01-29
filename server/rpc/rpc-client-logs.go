@@ -29,8 +29,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bishopfox/sliver/protobuf/rpcpb"
-	"github.com/bishopfox/sliver/server/log"
+	"github.com/Oni-kuki/sliver/protobuf/rpcpb"
+	"github.com/Oni-kuki/sliver/server/log"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

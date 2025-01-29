@@ -29,12 +29,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bishopfox/sliver/client/constants"
-	consts "github.com/bishopfox/sliver/client/constants"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/server/certs"
-	"github.com/bishopfox/sliver/server/core"
-	"github.com/bishopfox/sliver/server/log"
+	"github.com/Oni-kuki/sliver/client/constants"
+	consts "github.com/Oni-kuki/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/server/certs"
+	"github.com/Oni-kuki/sliver/server/core"
+	"github.com/Oni-kuki/sliver/server/log"
 	"golang.zx2c4.com/wireguard/device"
 )
 

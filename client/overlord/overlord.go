@@ -35,7 +35,7 @@ import (
 	"github.com/chromedp/cdproto/target"
 	"github.com/chromedp/chromedp"
 
-	"github.com/bishopfox/sliver/client/core"
+	"github.com/Oni-kuki/sliver/client/core"
 )
 
 const (

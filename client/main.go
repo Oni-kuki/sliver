@@ -24,7 +24,7 @@ import (
 	insecureRand "math/rand"
 	"time"
 
-	"github.com/bishopfox/sliver/client/cli"
+	"github.com/Oni-kuki/sliver/client/cli"
 )
 
 // Attempt to seed insecure rand with secure rand, but we really

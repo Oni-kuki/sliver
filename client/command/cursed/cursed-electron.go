@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/client/core"
-	"github.com/bishopfox/sliver/client/overlord"
-	"github.com/bishopfox/sliver/client/tcpproxy"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/client/core"
+	"github.com/Oni-kuki/sliver/client/overlord"
+	"github.com/Oni-kuki/sliver/client/tcpproxy"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"github.com/spf13/cobra"
 )
 

@@ -32,12 +32,12 @@ import (
 	"github.com/spf13/cobra"
 	"golang.org/x/term"
 
-	"github.com/bishopfox/sliver/client/assets"
-	"github.com/bishopfox/sliver/client/command/alias"
-	"github.com/bishopfox/sliver/client/command/extensions"
-	"github.com/bishopfox/sliver/client/command/settings"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/util/minisign"
+	"github.com/Oni-kuki/sliver/client/assets"
+	"github.com/Oni-kuki/sliver/client/command/alias"
+	"github.com/Oni-kuki/sliver/client/command/extensions"
+	"github.com/Oni-kuki/sliver/client/command/settings"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/util/minisign"
 )
 
 // ArmoryIndex - Index JSON containing alias/extension/bundle information

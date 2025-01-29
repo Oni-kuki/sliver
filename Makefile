@@ -30,13 +30,13 @@ MIN_SUPPORTED_GO_MAJOR_VERSION = 1
 MIN_SUPPORTED_GO_MINOR_VERSION = 21
 GO_VERSION_VALIDATION_ERR_MSG = Golang version is not supported, please update to at least $(MIN_SUPPORTED_GO_MAJOR_VERSION).$(MIN_SUPPORTED_GO_MINOR_VERSION)
 
-VERSION ?= $(shell git describe --abbrev=0)
+VERSION ?= v1.0.0-custom
 COMPILED_AT = $(shell date +%s)
 RELEASES_URL ?= https://api.github.com/repos/BishopFox/sliver/releases
 ARMORY_PUBLIC_KEY ?= RWSBpxpRWDrD7Fe+VvRE3c2VEDC2NK80rlNCj+BX0gz44Xw07r6KQD9L
 ARMORY_REPO_URL ?= https://api.github.com/repos/sliverarmory/armory/releases
-VERSION_PKG = github.com/bishopfox/sliver/client/version
-CLIENT_ASSETS_PKG = github.com/bishopfox/sliver/client/assets
+VERSION_PKG = github.com/Oni-kuki/sliver/client/version
+CLIENT_ASSETS_PKG = github.com/Oni-kuki/sliver/client/assets
 
 GIT_DIRTY = $(shell git diff --quiet|| echo 'Dirty')
 GIT_COMMIT = $(shell git rev-parse HEAD)
@@ -106,8 +106,8 @@ endif
 #
 .PHONY: default
 default: clean .downloaded_assets validate-go-version
-	$(ENV) CGO_ENABLED=$(CGO_ENABLED) $(GO) build -mod=vendor -trimpath $(TAGS),server $(LDFLAGS) -o sliver-server$(ARTIFACT_SUFFIX) ./server
-	$(ENV) CGO_ENABLED=0 $(GO) build -mod=vendor -trimpath $(TAGS),client $(LDFLAGS) -o sliver-client$(ARTIFACT_SUFFIX) ./client
+	$(ENV) CGO_ENABLED=$(CGO_ENABLED) $(GO) build -mod=vendor -trimpath $(TAGS),server $(LDFLAGS) -o sliver-server$(ARTIFACT_SUFFIX) -buildvcs=false ./server
+	$(ENV) CGO_ENABLED=0 $(GO) build -mod=vendor -trimpath $(TAGS),client $(LDFLAGS) -o sliver-client$(ARTIFACT_SUFFIX) -buildvcs=false ./client
 
 # Allows you to build a CGO-free client for any target e.g. `GOOS=windows GOARCH=arm64 make client`
 # NOTE: WireGuard is not supported on all platforms, but most 64-bit GOOS/GOARCH combinations should work.

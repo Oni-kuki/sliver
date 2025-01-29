@@ -28,14 +28,14 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/bishopfox/sliver/server/assets"
-	"github.com/bishopfox/sliver/server/c2"
-	"github.com/bishopfox/sliver/server/certs"
-	"github.com/bishopfox/sliver/server/configs"
-	"github.com/bishopfox/sliver/server/console"
-	"github.com/bishopfox/sliver/server/cryptography"
-	"github.com/bishopfox/sliver/server/daemon"
-	"github.com/bishopfox/sliver/server/db"
+	"github.com/Oni-kuki/sliver/server/assets"
+	"github.com/Oni-kuki/sliver/server/c2"
+	"github.com/Oni-kuki/sliver/server/certs"
+	"github.com/Oni-kuki/sliver/server/configs"
+	"github.com/Oni-kuki/sliver/server/console"
+	"github.com/Oni-kuki/sliver/server/cryptography"
+	"github.com/Oni-kuki/sliver/server/daemon"
+	"github.com/Oni-kuki/sliver/server/db"
 )
 
 const (

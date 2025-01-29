@@ -28,11 +28,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bishopfox/sliver/client/tcpproxy"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/rpcpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/client/tcpproxy"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/rpcpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 var (

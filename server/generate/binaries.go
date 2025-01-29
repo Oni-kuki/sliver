@@ -32,18 +32,18 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/bishopfox/sliver/implant"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/server/assets"
-	"github.com/bishopfox/sliver/server/certs"
-	"github.com/bishopfox/sliver/server/configs"
-	"github.com/bishopfox/sliver/server/cryptography"
-	"github.com/bishopfox/sliver/server/db/models"
-	"github.com/bishopfox/sliver/server/encoders"
-	"github.com/bishopfox/sliver/server/gogo"
-	"github.com/bishopfox/sliver/server/log"
-	"github.com/bishopfox/sliver/util"
-	utilEncoders "github.com/bishopfox/sliver/util/encoders"
+	"github.com/Oni-kuki/sliver/implant"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/server/assets"
+	"github.com/Oni-kuki/sliver/server/certs"
+	"github.com/Oni-kuki/sliver/server/configs"
+	"github.com/Oni-kuki/sliver/server/cryptography"
+	"github.com/Oni-kuki/sliver/server/db/models"
+	"github.com/Oni-kuki/sliver/server/encoders"
+	"github.com/Oni-kuki/sliver/server/gogo"
+	"github.com/Oni-kuki/sliver/server/log"
+	"github.com/Oni-kuki/sliver/util"
+	utilEncoders "github.com/Oni-kuki/sliver/util/encoders"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 )
@@ -359,7 +359,7 @@ func renderSliverGoCode(name string, build *clientpb.ImplantBuild, config *clien
 		return "", err
 	}
 
-	sliverPkgDir := filepath.Join(srcDir, "github.com", "bishopfox", "sliver") // "main"
+	sliverPkgDir := filepath.Join(srcDir, "github.com", "Oni-kuki", "sliver") // "main"
 	err = os.MkdirAll(sliverPkgDir, 0700)
 	if err != nil {
 		return "", nil

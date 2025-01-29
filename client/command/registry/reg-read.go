@@ -29,11 +29,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/bishopfox/sliver/client/command/loot"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/util/encoders"
+	"github.com/Oni-kuki/sliver/client/command/loot"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/util/encoders"
 )
 
 var validHives = []string{
@@ -123,7 +123,7 @@ func RegReadCmd(cmd *cobra.Command, con *console.SliverClient, args []string) {
 	finalPath = regPath[:pathBaseIdx]
 	key = regPath[pathBaseIdx+1:]
 
-	regRead, err := con.Rpc.RegistryRead(context.Background(), &sliverpb.RegistryReadReq{
+	regRead, err := con.Rpc.RegistryRead(context.Background(), &sliverpb.RegistryReedReq{
 		Hive:     hive,
 		Path:     finalPath,
 		Key:      key,

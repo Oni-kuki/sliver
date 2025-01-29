@@ -31,11 +31,11 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/bishopfox/sliver/implant/sliver/mount"
-	"github.com/bishopfox/sliver/implant/sliver/procdump"
-	"github.com/bishopfox/sliver/implant/sliver/taskrunner"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/mount"
+	"github.com/Oni-kuki/sliver/implant/sliver/procdump"
+	"github.com/Oni-kuki/sliver/implant/sliver/taskrunner"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"google.golang.org/protobuf/proto"
 
 	// {{if .Config.Debug}}
@@ -64,9 +64,9 @@ var (
 		sliverpb.MsgSetEnvReq:    setEnvHandler,
 		sliverpb.MsgUnsetEnvReq:  unsetEnvHandler,
 
-		sliverpb.MsgScreenshotReq: screenshotHandler,
+		sliverpb.MsgScrensshotReq: screenshotHandler,
 
-		sliverpb.MsgNetstatReq:  netstatHandler,
+		sliverpb.MsgNetstsatReq:  netstatHandler,
 		sliverpb.MsgSideloadReq: sideloadHandler,
 
 		sliverpb.MsgReconfigureReq: reconfigureHandler,

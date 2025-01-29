@@ -29,17 +29,17 @@ import (
 	"time"
 
 	"github.com/Binject/debug/pe"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/server/codenames"
-	"github.com/bishopfox/sliver/server/core"
-	"github.com/bishopfox/sliver/server/db"
-	"github.com/bishopfox/sliver/server/db/models"
-	"github.com/bishopfox/sliver/server/generate"
-	"github.com/bishopfox/sliver/server/log"
-	"github.com/bishopfox/sliver/server/sgn"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/server/codenames"
+	"github.com/Oni-kuki/sliver/server/core"
+	"github.com/Oni-kuki/sliver/server/db"
+	"github.com/Oni-kuki/sliver/server/db/models"
+	"github.com/Oni-kuki/sliver/server/generate"
+	"github.com/Oni-kuki/sliver/server/log"
+	"github.com/Oni-kuki/sliver/server/sgn"
+	"github.com/Oni-kuki/sliver/util"
 
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
@@ -289,7 +289,7 @@ func (rpc *Server) Sideload(ctx context.Context, req *sliverpb.SideloadReq) (*sl
 }
 
 // SpawnDll - Spawn a DLL on the remote system (Windows only)
-func (rpc *Server) SpawnDll(ctx context.Context, req *sliverpb.InvokeSpawnDllReq) (*sliverpb.SpawnDll, error) {
+func (rpc *Server) SpawnDll(ctx context.Context, req *sliverpb.InvokeSpawnDlllReq) (*sliverpb.SpawnDll, error) {
 	var session *core.Session
 	var beacon *clientpb.Beacon
 	var dbBeacon *models.Beacon

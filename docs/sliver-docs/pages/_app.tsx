@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
                   © {new Date().getFullYear()}{" "}
                   <a
-                    href="https://bishopfox.com/"
+                    href="https://Oni-kuki.com/"
                     className="hover:underline"
                     rel="noreferrer"
                     target="_blank"
@@ -75,7 +75,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   </a>
                   {" - "}
                   <a
-                    href="https://github.com/BishopFox/sliver/pulls"
+                    href="https://github.com/Oni-kuki/sliver/pulls"
                     rel="noreferrer"
                     className="hover:underline"
                     target="_blank"
@@ -87,7 +87,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
                   <li>
                     <a
-                      href="https://github.com/BishopFox/sliver/blob/master/LICENSE"
+                      href="https://github.com/Oni-kuki/sliver/blob/master/LICENSE"
                       target="_blank"
                       rel="noreferrer"
                       className="hover:underline me-4 md:me-6"

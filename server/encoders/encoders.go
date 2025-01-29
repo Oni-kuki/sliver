@@ -30,12 +30,12 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/server/assets"
-	"github.com/bishopfox/sliver/server/db"
-	"github.com/bishopfox/sliver/server/log"
-	util "github.com/bishopfox/sliver/util/encoders"
-	"github.com/bishopfox/sliver/util/encoders/traffic"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/server/assets"
+	"github.com/Oni-kuki/sliver/server/db"
+	"github.com/Oni-kuki/sliver/server/log"
+	util "github.com/Oni-kuki/sliver/util/encoders"
+	"github.com/Oni-kuki/sliver/util/encoders/traffic"
 )
 
 const (

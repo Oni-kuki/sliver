@@ -21,9 +21,9 @@ package sessions
 import (
 	"context"
 
-	"github.com/bishopfox/sliver/client/command/kill"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/client/command/kill"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
 	"github.com/spf13/cobra"
 )
 

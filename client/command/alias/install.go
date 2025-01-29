@@ -25,9 +25,9 @@ import (
 	"strings"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/bishopfox/sliver/client/assets"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/client/assets"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/util"
 	"github.com/spf13/cobra"
 )
 

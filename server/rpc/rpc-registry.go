@@ -21,12 +21,12 @@ package rpc
 import (
 	"context"
 
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 // RegistryRead - gRPC interface to read a registry key from a session
-func (rpc *Server) RegistryRead(ctx context.Context, req *sliverpb.RegistryReadReq) (*sliverpb.RegistryRead, error) {
+func (rpc *Server) RegistryRead(ctx context.Context, req *sliverpb.RegistryReedReq) (*sliverpb.RegistryRead, error) {
 	resp := &sliverpb.RegistryRead{Response: &commonpb.Response{}}
 	err := rpc.GenericHandler(req, resp)
 	if err != nil {

@@ -28,14 +28,14 @@ import (
 	"strings"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/bishopfox/sliver/client/assets"
-	"github.com/bishopfox/sliver/client/command/help"
-	"github.com/bishopfox/sliver/client/console"
-	consts "github.com/bishopfox/sliver/client/constants"
-	"github.com/bishopfox/sliver/client/packages"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
-	"github.com/bishopfox/sliver/util"
+	"github.com/Oni-kuki/sliver/client/assets"
+	"github.com/Oni-kuki/sliver/client/command/help"
+	"github.com/Oni-kuki/sliver/client/console"
+	consts "github.com/Oni-kuki/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/client/packages"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/util"
 	app "github.com/reeflective/console"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
@@ -162,7 +162,7 @@ func LoadAlias(manifestPath string, cmd *cobra.Command, con *console.SliverClien
 	helpMsg := fmt.Sprintf("[%s] %s", aliasManifest.Name, aliasManifest.Help)
 	longHelpMsg := help.FormatHelpTmpl(aliasManifest.LongHelp)
 	longHelpMsg += "\n\n⚠️  If you're having issues passing arguments to the alias please read:\n"
-	longHelpMsg += "https://github.com/BishopFox/sliver/wiki/Aliases-&-Extensions#aliases-command-parsing"
+	longHelpMsg += "https://github.com/Oni-kuki/sliver/wiki/Aliases-&-Extensions#aliases-command-parsing"
 	addAliasCmd := &cobra.Command{
 		Use:   aliasManifest.CommandName,
 		Short: helpMsg,
@@ -411,7 +411,7 @@ func runAliasCommand(cmd *cobra.Command, con *console.SliverClient, args []strin
 		ctrl := make(chan bool)
 		msg := fmt.Sprintf("Executing %s %s ...", cmd.Name(), extArgsStr)
 		con.SpinUntil(msg, ctrl)
-		spawnDllResp, err := con.Rpc.SpawnDll(context.Background(), &sliverpb.InvokeSpawnDllReq{
+		spawnDllResp, err := con.Rpc.SpawnDll(context.Background(), &sliverpb.InvokeSpawnDlllReq{
 			Request:     con.ActiveTarget.Request(cmd),
 			Args:        args,
 			Data:        binData,

@@ -36,8 +36,8 @@ import (
 
 	"os"
 
-	"github.com/bishopfox/sliver/implant/sliver/cryptography"
-	pb "github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/cryptography"
+	pb "github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"google.golang.org/protobuf/proto"
 )
 

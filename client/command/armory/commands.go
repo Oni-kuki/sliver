@@ -5,11 +5,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/bishopfox/sliver/client/command/completers"
-	"github.com/bishopfox/sliver/client/command/flags"
-	"github.com/bishopfox/sliver/client/command/help"
-	"github.com/bishopfox/sliver/client/console"
-	consts "github.com/bishopfox/sliver/client/constants"
+	"github.com/Oni-kuki/sliver/client/command/completers"
+	"github.com/Oni-kuki/sliver/client/command/flags"
+	"github.com/Oni-kuki/sliver/client/command/help"
+	"github.com/Oni-kuki/sliver/client/console"
+	consts "github.com/Oni-kuki/sliver/client/constants"
 )
 
 // Commands returns the `armory` command and its subcommands.

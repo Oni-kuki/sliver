@@ -21,7 +21,7 @@ package pivots
 */
 
 import (
-	pb "github.com/bishopfox/sliver/protobuf/sliverpb"
+	pb "github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 var SupportedPivotListeners = map[pb.PivotType]CreateListener{

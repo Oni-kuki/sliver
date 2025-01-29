@@ -3,8 +3,8 @@ package rpc
 import (
 	"context"
 
-	"github.com/bishopfox/sliver/protobuf/commonpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/protobuf/commonpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 // RegisterExtension registers a new extension in the implant

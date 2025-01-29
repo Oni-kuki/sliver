@@ -19,8 +19,8 @@ package tunnel_handlers
 */
 
 import (
-	"github.com/bishopfox/sliver/implant/sliver/transports"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/implant/sliver/transports"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 func reportError(envelope *sliverpb.Envelope, connection *transports.Connection, data []byte) {

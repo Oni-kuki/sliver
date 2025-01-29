@@ -23,8 +23,8 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 	"github.com/gofrs/uuid"
 	"google.golang.org/protobuf/proto"
 	"gorm.io/gorm"

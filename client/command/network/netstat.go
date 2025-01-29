@@ -27,10 +27,10 @@ import (
 	"github.com/spf13/cobra"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/bishopfox/sliver/client/command/settings"
-	"github.com/bishopfox/sliver/client/console"
-	"github.com/bishopfox/sliver/protobuf/clientpb"
-	"github.com/bishopfox/sliver/protobuf/sliverpb"
+	"github.com/Oni-kuki/sliver/client/command/settings"
+	"github.com/Oni-kuki/sliver/client/console"
+	"github.com/Oni-kuki/sliver/protobuf/clientpb"
+	"github.com/Oni-kuki/sliver/protobuf/sliverpb"
 )
 
 // NetstatCmd - Display active network connections on the remote system
@@ -50,7 +50,7 @@ func NetstatCmd(cmd *cobra.Command, con *console.SliverClient, args []string) {
 	implantPID := getPID(session, beacon)
 	activeC2 := getActiveC2(session, beacon)
 
-	netstat, err := con.Rpc.Netstat(context.Background(), &sliverpb.NetstatReq{
+	netstat, err := con.Rpc.Netstat(context.Background(), &sliverpb.NetstsatReq{
 		Request:   con.ActiveTarget.Request(cmd),
 		TCP:       tcp,
 		UDP:       udp,
