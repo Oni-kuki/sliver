@@ -546,7 +546,7 @@ const (
 	CommandOverlaySetShowWindowControlsOverlay             = overlay.CommandSetShowWindowControlsOverlay
 	EventOverlayInspectNodeRequested                       = "Overlay.inspectNodeRequested"
 	EventOverlayNodeHighlightRequested                     = "Overlay.nodeHighlightRequested"
-	EventOverlayScrensshotRequested                        = "Overlay.screenshotRequested"
+	EventOverlayScreenshotRequested                        = "Overlay.screenshotRequested"
 	EventOverlayInspectModeCanceled                        = "Overlay.inspectModeCanceled"
 	CommandPWAGetOsAppState                                = pwa.CommandGetOsAppState
 	CommandPageAddScriptToEvaluateOnNewDocument            = page.CommandAddScriptToEvaluateOnNewDocument
@@ -2234,8 +2234,8 @@ func UnmarshalMessage(msg *Message) (interface{}, error) {
 	case EventOverlayNodeHighlightRequested:
 		v = new(overlay.EventNodeHighlightRequested)
 
-	case EventOverlayScrensshotRequested:
-		v = new(overlay.EventScrensshotRequested)
+	case EventOverlayScreenshotRequested:
+		v = new(overlay.EventScreenshotRequested)
 
 	case EventOverlayInspectModeCanceled:
 		v = new(overlay.EventInspectModeCanceled)

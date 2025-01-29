@@ -24,11 +24,11 @@ type EventNodeHighlightRequested struct {
 	NodeID cdp.NodeID `json:"nodeId"`
 }
 
-// EventScrensshotRequested fired when user asks to capture screenshot of
+// EventScreenshotRequested fired when user asks to capture screenshot of
 // some area on the page.
 //
 // See: https://chromedevtools.github.io/devtools-protocol/tot/Overlay#event-screenshotRequested
-type EventScrensshotRequested struct {
+type EventScreenshotRequested struct {
 	Viewport *page.Viewport `json:"viewport"` // Viewport to capture, in device independent pixels (dip).
 }
 
